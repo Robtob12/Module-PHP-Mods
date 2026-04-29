@@ -140,6 +140,10 @@ function H1($text = '', $class = ''): string{
     return "<h1 class='$class'>$text</h1>";
 }
 
+function P($text = '', $class = ''): string{
+    return "<p class='$class'>$text</p>";
+}
+
 function INPUT($type = "text",$name = "",$ind = [],$plchldr = "",$value = ""): string{
 
     $attr = '';
@@ -151,7 +155,7 @@ function INPUT($type = "text",$name = "",$ind = [],$plchldr = "",$value = ""): s
     return "<input type='$type' name='$name' $attr placeholder='$plchldr' value='$value'>";
 }
 
-function BUTTON($text = "Button", $onclick = '', $class = ''): string{
+function BTN($text = "Button", $onclick = '', $class = ''): string{
     return "<button onclick=\"$onclick\" class='$class'>$text</button>";
 }
 
@@ -166,6 +170,12 @@ function SPAN($class = '', $content = ''): string{
 function DIV($content = '', $class = ''): string{
     return "<div class='$class'>$content</div>";
 }
+
+function BR(){
+    return '<br>';
+}
+
+
 
 /* =========================
    LOREM
